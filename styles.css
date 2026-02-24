@@ -1,1 +1,83 @@
 /*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* Main container effect */
+body > h1,
+body > p,
+.code-container,
+.info-box {
+    width: 100%;
+}
+
+/* Wrapper effect using body */
+body {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 40px 60px;
+    max-width: 900px;
+}
+
+/* Heading */
+#verification_heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Subheading */
+#verification_subtext {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* OTP container */
+.code-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* OTP inputs */
+.code {
+    width: 90px;
+    height: 120px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    color: #777;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.code:focus {
+    border-color: #000;
+}
+
+/* Info box at bottom */
+.info-box {
+    background-color: #eee;
+    padding: 18px 25px;
+    text-align: center;
+    color: #777;
+    border-radius: 6px;
+    font-size: 14px;
+}
